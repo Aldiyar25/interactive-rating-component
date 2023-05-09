@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: aliceblue;
+  background: #121417;
+}
+
+.rating-state {
+  max-width: 500px;
+  height: 500px;
+  margin: 200px auto;
+  border-radius: 30px;
+  background: #252d37;
+  padding: 35px;
+}
+.star {
+  width: 50px;
+  height: 50px;
+  background: #3a4655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.rating__title {
+  margin-top: 32px;
+  font-size: 40px;
+}
+
+.rating__subtitle {
+  color: #959eac;
+  font-size: 20px;
+}
+
+.rating-nums {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rating-state .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.rating-state .buttons button {
+  font-size: 1.2rem;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background: #3a4655;
+  color: #959eac;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.rating-state .buttons button:hover {
+  background: hsl(217, 12%, 63%);
+  color: #121417;
+}
+
+.rating-state .buttons button.selected {
+  background: #fb7413;
+  color: white;
+}
+
+.rating-state .buttons button.error {
+  border: 1px solid red;
+}
+
+.submit {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background: #fb7413;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background: #fff;
+  color: #fb7413;
+  transition: all 350ms ease-in-out;
+}
+
+.error-msg {
+  margin-top: 15px;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+.d-none {
+  display: none;
+}
+ .error {
+  border: 1px solid red;
+}
+
+/* box-2 */
+
+.rating-state #box-2 {
+  text-align: center;
+}
+
+.rating-state .selection-msg {
+  padding: 10px 15px;
+  color: #fb7413;
+  background: #3a4655;
+  width: 300px;
+  margin: 50px auto 0px auto;
+  margin-bottom: 1.1rem;
+  border-radius: 50px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
